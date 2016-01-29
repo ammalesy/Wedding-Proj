@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+       // [[UINavigationBar appearance] setFrame:CGRectMake(0, 0, 320, 60)];
+        //UINavigationBar.appearance().frame = CGRectMake(0, 0, 320, 100)
+        
         // Override point for customization after application launch.
         return true
     }
@@ -108,4 +112,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
+
+
 

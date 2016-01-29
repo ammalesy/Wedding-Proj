@@ -14,44 +14,49 @@ class CounterUtil: NSObject {
     
     let INCREMENT_TIMER_INTERVAL:NSTimeInterval = 1
     var timer:NSTimer!
-    var targetStringDate:NSString = "2016-01-28 05:04"//NOW
-    var timeHandlerClosure: ((time:NSString) -> (Void))!
+    var targetStringDate:NSString = "2017-01-29 16:17:00"
+    var timeHandlerClosure: ((remainTimeComponent:NSDateComponents) -> (Void))!
+    var completedClosure: (() -> (Void))!
     
     var now:NSDate = NSDate()
     var targetDate:NSDate!
     
     override init(){
         super.init()
-        
-        targetDate = self.dateFormater().dateFromString(targetStringDate as String)
-        
     }
-    func start(timeHandler: (time:NSString) -> Void){
+    func start(timeHandler: (remainTimeComponent:NSDateComponents) -> Void, completed:()->Void){
+        targetDate = self.dateFormater().dateFromString(targetStringDate as String)
         timer = NSTimer.scheduledTimerWithTimeInterval(INCREMENT_TIMER_INTERVAL,
             target:self,
             selector: Selector("timeHandler"),
             userInfo: nil, repeats: true)
         
         self.timeHandlerClosure = timeHandler
+        self.completedClosure = completed
     }
     
     func timeHandler(){
-        /*NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-        NSDateComponents *components = [gregorianCalendar components:NSCalendarUnitDay
-        fromDate:startDate
-        toDate:endDate
-        options:NSCalendarWrapComponents];*/
+        now = NSDate()
+        print(now)
+
+        let calendar = NSCalendar.currentCalendar()
+        let componentDate:NSDateComponents = calendar.components([.Year, .Month, .Day , .Hour, .Minute, .Second], fromDate: now, toDate: targetDate, options: NSCalendarOptions.WrapComponents)
         
-        let gregorianCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
-        let component:NSDateComponents = (gregorianCalendar?.components(NSCalendarUnit.Day, fromDate: now, toDate: targetDate, options: NSCalendarOptions.WrapComponents))!
-        
-        let result = "เหลือเวลาอีก : \(component.day) วัน \(component.minute) นาที"
-        self.timeHandlerClosure(time: result)
+        if(componentDate.month  <= 0 &&
+            componentDate.day  <= 0 &&
+            componentDate.hour  <= 0 &&
+            componentDate.minute  <= 0 &&
+            componentDate.second  <= 0)
+        {
+            self.completedClosure()
+            self.timer.invalidate()
+        }else{
+            self.timeHandlerClosure(remainTimeComponent: componentDate)
+        }
     }
-    
     func dateFormater()->NSDateFormatter{
         let format:NSDateFormatter = NSDateFormatter()
-        format.dateFormat = "yyyy-MM-dd hh:mm"
+        format.dateFormat = "yyyy-MM-dd HH:mm:ss"
         return format;
     }
     

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		521909AB1C5A108500A78EE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521909AA1C5A108500A78EE4 /* AppDelegate.swift */; };
-		521909AD1C5A108500A78EE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521909AC1C5A108500A78EE4 /* ViewController.swift */; };
+		521909AD1C5A108500A78EE4 /* CountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521909AC1C5A108500A78EE4 /* CountViewController.swift */; };
 		521909B01C5A108500A78EE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521909AE1C5A108500A78EE4 /* Main.storyboard */; };
 		521909B31C5A108500A78EE4 /* NMWedding.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 521909B11C5A108500A78EE4 /* NMWedding.xcdatamodeld */; };
 		521909B51C5A108500A78EE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521909B41C5A108500A78EE4 /* Assets.xcassets */; };
@@ -16,6 +16,7 @@
 		521909C31C5A108500A78EE4 /* NMWeddingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521909C21C5A108500A78EE4 /* NMWeddingTests.swift */; };
 		521909CE1C5A108500A78EE4 /* NMWeddingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521909CD1C5A108500A78EE4 /* NMWeddingUITests.swift */; };
 		521909DF1C5A114D00A78EE4 /* CounterUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521909DE1C5A114D00A78EE4 /* CounterUtil.swift */; };
+		525039671C5B6A3D0094CFB0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525039661C5B6A3D0094CFB0 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 /* Begin PBXFileReference section */
 		521909A71C5A108500A78EE4 /* NMWedding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMWedding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		521909AA1C5A108500A78EE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		521909AC1C5A108500A78EE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		521909AC1C5A108500A78EE4 /* CountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountViewController.swift; sourceTree = "<group>"; };
 		521909AF1C5A108500A78EE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		521909B21C5A108500A78EE4 /* NMWedding.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NMWedding.xcdatamodel; sourceTree = "<group>"; };
 		521909B41C5A108500A78EE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		521909CD1C5A108500A78EE4 /* NMWeddingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMWeddingUITests.swift; sourceTree = "<group>"; };
 		521909CF1C5A108500A78EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		521909DE1C5A114D00A78EE4 /* CounterUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterUtil.swift; sourceTree = "<group>"; };
+		525039661C5B6A3D0094CFB0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				521909DD1C5A114D00A78EE4 /* Util */,
+				525039661C5B6A3D0094CFB0 /* WelcomeViewController.swift */,
 				521909AA1C5A108500A78EE4 /* AppDelegate.swift */,
-				521909AC1C5A108500A78EE4 /* ViewController.swift */,
+				521909AC1C5A108500A78EE4 /* CountViewController.swift */,
 				521909AE1C5A108500A78EE4 /* Main.storyboard */,
 				521909B41C5A108500A78EE4 /* Assets.xcassets */,
 				521909B61C5A108500A78EE4 /* LaunchScreen.storyboard */,
@@ -270,7 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				521909AD1C5A108500A78EE4 /* ViewController.swift in Sources */,
+				521909AD1C5A108500A78EE4 /* CountViewController.swift in Sources */,
+				525039671C5B6A3D0094CFB0 /* WelcomeViewController.swift in Sources */,
 				521909B31C5A108500A78EE4 /* NMWedding.xcdatamodeld in Sources */,
 				521909DF1C5A114D00A78EE4 /* CounterUtil.swift in Sources */,
 				521909AB1C5A108500A78EE4 /* AppDelegate.swift in Sources */,
@@ -414,6 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NMWedding/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.NMWedding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NMWedding/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.NMWedding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +504,7 @@
 				521909D41C5A108500A78EE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		521909D51C5A108500A78EE4 /* Build configuration list for PBXNativeTarget "NMWeddingTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +513,7 @@
 				521909D71C5A108500A78EE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		521909D81C5A108500A78EE4 /* Build configuration list for PBXNativeTarget "NMWeddingUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +522,7 @@
 				521909DA1C5A108500A78EE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

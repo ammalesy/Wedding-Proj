@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CountViewController: UIViewController {
     @IBOutlet weak var countingLb: UILabel!
 
     override func viewDidLoad() {
@@ -16,14 +16,21 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         let counterObj:CounterUtil =  CounterUtil.sharedInstance;
-        counterObj.start { (time) -> Void in
-            //print(time)
-            self.countingLb.text = time as String;
-            self.countingLb.setNeedsDisplay()
+        counterObj.targetStringDate = "2017-01-29 17:30:00"
+        counterObj.start({ (component:NSDateComponents) -> Void in
             
+            let display:String = "\(component.day) Days \(component.hour) Hours \(component.minute) Mins (\(component.second))"
+            self.displayClock(display)
+            
+        }) { () -> Void in
+                
+            self.displayClock("แต่งแล้ว")
         }
     }
-
+    func displayClock(time:String){
+        self.countingLb.text = time;
+        self.countingLb.setNeedsDisplay()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
