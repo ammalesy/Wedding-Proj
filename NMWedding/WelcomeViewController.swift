@@ -21,6 +21,7 @@ class WelcomeViewController: UIViewController {
         
         let countCtrl:UITabBarController = self.storyboard?.instantiateViewControllerWithIdentifier("tabbarMenu") as! UITabBarController
         countCtrl.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        countCtrl.selectedIndex = 1
         
         let caTransition:CATransition = CATransition()
         caTransition.duration = 0.7

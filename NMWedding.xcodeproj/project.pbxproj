@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		189A80F01C5CB11B007D287D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189A80EF1C5CB11B007D287D /* MapKit.framework */; };
+		189A80F21C5CB15B007D287D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A80F11C5CB15B007D287D /* MapViewController.swift */; };
+		18EE3B7C1C5CA5070050331F /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE3B7B1C5CA5070050331F /* TabbarViewController.swift */; };
 		521909AB1C5A108500A78EE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521909AA1C5A108500A78EE4 /* AppDelegate.swift */; };
 		521909AD1C5A108500A78EE4 /* CountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521909AC1C5A108500A78EE4 /* CountViewController.swift */; };
 		521909B01C5A108500A78EE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521909AE1C5A108500A78EE4 /* Main.storyboard */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		189A80EF1C5CB11B007D287D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		189A80F11C5CB15B007D287D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		18EE3B7B1C5CA5070050331F /* TabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		521909A71C5A108500A78EE4 /* NMWedding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMWedding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		521909AA1C5A108500A78EE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		521909AC1C5A108500A78EE4 /* CountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189A80F01C5CB11B007D287D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +90,7 @@
 		5219099E1C5A108400A78EE4 = {
 			isa = PBXGroup;
 			children = (
+				189A80EF1C5CB11B007D287D /* MapKit.framework */,
 				521909A91C5A108500A78EE4 /* NMWedding */,
 				521909C11C5A108500A78EE4 /* NMWeddingTests */,
 				521909CC1C5A108500A78EE4 /* NMWeddingUITests */,
@@ -106,7 +114,9 @@
 				521909DD1C5A114D00A78EE4 /* Util */,
 				525039661C5B6A3D0094CFB0 /* WelcomeViewController.swift */,
 				521909AA1C5A108500A78EE4 /* AppDelegate.swift */,
+				18EE3B7B1C5CA5070050331F /* TabbarViewController.swift */,
 				521909AC1C5A108500A78EE4 /* CountViewController.swift */,
+				189A80F11C5CB15B007D287D /* MapViewController.swift */,
 				521909AE1C5A108500A78EE4 /* Main.storyboard */,
 				521909B41C5A108500A78EE4 /* Assets.xcassets */,
 				521909B61C5A108500A78EE4 /* LaunchScreen.storyboard */,
@@ -210,6 +220,7 @@
 				TargetAttributes = {
 					521909A61C5A108500A78EE4 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = T827QP7R38;
 					};
 					521909BD1C5A108500A78EE4 = {
 						CreatedOnToolsVersion = 7.1;
@@ -275,9 +286,11 @@
 			files = (
 				521909AD1C5A108500A78EE4 /* CountViewController.swift in Sources */,
 				525039671C5B6A3D0094CFB0 /* WelcomeViewController.swift in Sources */,
+				18EE3B7C1C5CA5070050331F /* TabbarViewController.swift in Sources */,
 				521909B31C5A108500A78EE4 /* NMWedding.xcdatamodeld in Sources */,
 				521909DF1C5A114D00A78EE4 /* CounterUtil.swift in Sources */,
 				521909AB1C5A108500A78EE4 /* AppDelegate.swift in Sources */,
+				189A80F21C5CB15B007D287D /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NMWedding/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -429,6 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NMWedding/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
