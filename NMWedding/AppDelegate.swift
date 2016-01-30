@@ -17,11 +17,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        
+//        let colorBgLine = UIColor(red: 77/255.0, green: 76/255.0, blue: 74/255.0, alpha: 1)
+        let img = UIImage()//self.getImageWithColor(colorBgLine, size: CGSizeMake(1, 1))
+        
+        UITabBar.appearance().shadowImage = img
        // [[UINavigationBar appearance] setFrame:CGRectMake(0, 0, 320, 60)];
         //UINavigationBar.appearance().frame = CGRectMake(0, 0, 320, 100)
         
         // Override point for customization after application launch.
         return true
+    }
+    func getImageWithColor(color: UIColor, size: CGSize) -> UIImage {
+        let rect = CGRectMake(0, 0, size.width, size.height)
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        color.setFill()
+        UIRectFill(rect)
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
     }
 
     func applicationWillResignActive(application: UIApplication) {

@@ -13,8 +13,11 @@ class CounterUtil: NSObject {
     static let sharedInstance = CounterUtil()
     
     let INCREMENT_TIMER_INTERVAL:NSTimeInterval = 1
+    var calendar:NSCalendar!
+    let dateFormater:NSDateFormatter = NSDateFormatter()
+    
     var timer:NSTimer!
-    var targetStringDate:NSString = "2017-01-29 16:17:00"
+    var targetStringDate:String!
     var timeHandlerClosure: ((remainTimeComponent:NSDateComponents) -> (Void))!
     var completedClosure: (() -> (Void))!
     
@@ -23,9 +26,14 @@ class CounterUtil: NSObject {
     
     override init(){
         super.init()
+        self.calendar = NSLocale.currentLocale().objectForKey(NSLocaleCalendar) as! NSCalendar
+        dateFormater.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dateFormater.calendar = calendar
     }
     func start(timeHandler: (remainTimeComponent:NSDateComponents) -> Void, completed:()->Void){
-        targetDate = self.dateFormater().dateFromString(targetStringDate as String)
+        targetDate = self.dateFormater.dateFromString(targetStringDate)
+        print(targetDate)
+        
         timer = NSTimer.scheduledTimerWithTimeInterval(INCREMENT_TIMER_INTERVAL,
             target:self,
             selector: Selector("timeHandler"),
@@ -36,17 +44,21 @@ class CounterUtil: NSObject {
     }
     
     func timeHandler(){
-        now = NSDate()
+        let nowStr = self.dateFormater.stringFromDate(NSDate())
+        print(nowStr)
+        now = self.dateFormater.dateFromString(nowStr)!
         print(now)
+        print(targetDate)
 
-        let calendar = NSCalendar.currentCalendar()
+        
         let componentDate:NSDateComponents = calendar.components([.Year, .Month, .Day , .Hour, .Minute, .Second], fromDate: now, toDate: targetDate, options: NSCalendarOptions.WrapComponents)
         
-        if(componentDate.month  <= 0 &&
-            componentDate.day  <= 0 &&
-            componentDate.hour  <= 0 &&
-            componentDate.minute  <= 0 &&
-            componentDate.second  <= 0)
+        print(componentDate)
+        //if(  ) {
+        let result:NSComparisonResult = now.compare(targetDate)
+  
+        
+        if(result == NSComparisonResult.OrderedDescending)
         {
             self.completedClosure()
             self.timer.invalidate()
@@ -54,11 +66,4 @@ class CounterUtil: NSObject {
             self.timeHandlerClosure(remainTimeComponent: componentDate)
         }
     }
-    func dateFormater()->NSDateFormatter{
-        let format:NSDateFormatter = NSDateFormatter()
-        format.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        return format;
-    }
-    
-    
 }

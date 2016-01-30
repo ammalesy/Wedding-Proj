@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18972E871C5CED7500253453 /* NZPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18972E861C5CED7500253453 /* NZPhoto.swift */; };
+		18972E891C5CEDBC00253453 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18972E881C5CEDBC00253453 /* UIKit.framework */; };
+		18972E8B1C5CEDC400253453 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18972E8A1C5CEDC400253453 /* CoreGraphics.framework */; };
+		18972E8D1C5CEEE600253453 /* PhotosProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18972E8C1C5CEEE600253453 /* PhotosProvider.swift */; };
 		189A80F01C5CB11B007D287D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189A80EF1C5CB11B007D287D /* MapKit.framework */; };
 		189A80F21C5CB15B007D287D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A80F11C5CB15B007D287D /* MapViewController.swift */; };
 		18EE3B7C1C5CA5070050331F /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE3B7B1C5CA5070050331F /* TabbarViewController.swift */; };
@@ -20,6 +24,7 @@
 		521909CE1C5A108500A78EE4 /* NMWeddingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521909CD1C5A108500A78EE4 /* NMWeddingUITests.swift */; };
 		521909DF1C5A114D00A78EE4 /* CounterUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521909DE1C5A114D00A78EE4 /* CounterUtil.swift */; };
 		525039671C5B6A3D0094CFB0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525039661C5B6A3D0094CFB0 /* WelcomeViewController.swift */; };
+		DC88471E1A70B9CF8A7A4203 /* libPods-NMWedding.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E92ECE32F5DFEB3BC86649 /* libPods-NMWedding.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18972E831C5CE86100253453 /* NMWedding-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NMWedding-Bridging-Header.h"; sourceTree = "<group>"; };
+		18972E861C5CED7500253453 /* NZPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NZPhoto.swift; sourceTree = "<group>"; };
+		18972E881C5CEDBC00253453 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18972E8A1C5CEDC400253453 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18972E8C1C5CEEE600253453 /* PhotosProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosProvider.swift; sourceTree = "<group>"; };
 		189A80EF1C5CB11B007D287D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		189A80F11C5CB15B007D287D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		18EE3B7B1C5CA5070050331F /* TabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		245012DE66794D006C70C4CF /* Pods-NMWedding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMWedding.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NMWedding/Pods-NMWedding.debug.xcconfig"; sourceTree = "<group>"; };
 		521909A71C5A108500A78EE4 /* NMWedding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMWedding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		521909AA1C5A108500A78EE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		521909AC1C5A108500A78EE4 /* CountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +70,8 @@
 		521909CF1C5A108500A78EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		521909DE1C5A114D00A78EE4 /* CounterUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterUtil.swift; sourceTree = "<group>"; };
 		525039661C5B6A3D0094CFB0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B4629E808A3FA777242B197F /* Pods-NMWedding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMWedding.release.xcconfig"; path = "Pods/Target Support Files/Pods-NMWedding/Pods-NMWedding.release.xcconfig"; sourceTree = "<group>"; };
+		D8E92ECE32F5DFEB3BC86649 /* libPods-NMWedding.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NMWedding.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +79,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18972E8B1C5CEDC400253453 /* CoreGraphics.framework in Frameworks */,
+				18972E891C5CEDBC00253453 /* UIKit.framework in Frameworks */,
 				189A80F01C5CB11B007D287D /* MapKit.framework in Frameworks */,
+				DC88471E1A70B9CF8A7A4203 /* libPods-NMWedding.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +103,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D7CB630BB7A121F195E2D5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				245012DE66794D006C70C4CF /* Pods-NMWedding.debug.xcconfig */,
+				B4629E808A3FA777242B197F /* Pods-NMWedding.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4F5DA50445347CCF391A0D6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18972E8A1C5CEDC400253453 /* CoreGraphics.framework */,
+				18972E881C5CEDBC00253453 /* UIKit.framework */,
+				D8E92ECE32F5DFEB3BC86649 /* libPods-NMWedding.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5219099E1C5A108400A78EE4 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +130,8 @@
 				521909C11C5A108500A78EE4 /* NMWeddingTests */,
 				521909CC1C5A108500A78EE4 /* NMWeddingUITests */,
 				521909A81C5A108500A78EE4 /* Products */,
+				0D7CB630BB7A121F195E2D5D /* Pods */,
+				4F5DA50445347CCF391A0D6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,11 +154,14 @@
 				18EE3B7B1C5CA5070050331F /* TabbarViewController.swift */,
 				521909AC1C5A108500A78EE4 /* CountViewController.swift */,
 				189A80F11C5CB15B007D287D /* MapViewController.swift */,
+				18972E8C1C5CEEE600253453 /* PhotosProvider.swift */,
 				521909AE1C5A108500A78EE4 /* Main.storyboard */,
 				521909B41C5A108500A78EE4 /* Assets.xcassets */,
 				521909B61C5A108500A78EE4 /* LaunchScreen.storyboard */,
 				521909B91C5A108500A78EE4 /* Info.plist */,
 				521909B11C5A108500A78EE4 /* NMWedding.xcdatamodeld */,
+				18972E831C5CE86100253453 /* NMWedding-Bridging-Header.h */,
+				18972E861C5CED7500253453 /* NZPhoto.swift */,
 			);
 			path = NMWedding;
 			sourceTree = "<group>";
@@ -159,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 521909D21C5A108500A78EE4 /* Build configuration list for PBXNativeTarget "NMWedding" */;
 			buildPhases = (
+				329F1DD260429E76C8E0144C /* Check Pods Manifest.lock */,
 				521909A31C5A108500A78EE4 /* Sources */,
 				521909A41C5A108500A78EE4 /* Frameworks */,
 				521909A51C5A108500A78EE4 /* Resources */,
+				D57663EE589FE00ADA8606F9 /* Embed Pods Frameworks */,
+				D8161E426DE9AC2501D11F82 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,6 +322,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		329F1DD260429E76C8E0144C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D57663EE589FE00ADA8606F9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NMWedding/Pods-NMWedding-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8161E426DE9AC2501D11F82 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NMWedding/Pods-NMWedding-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		521909A31C5A108500A78EE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -286,11 +377,13 @@
 			files = (
 				521909AD1C5A108500A78EE4 /* CountViewController.swift in Sources */,
 				525039671C5B6A3D0094CFB0 /* WelcomeViewController.swift in Sources */,
+				18972E871C5CED7500253453 /* NZPhoto.swift in Sources */,
 				18EE3B7C1C5CA5070050331F /* TabbarViewController.swift in Sources */,
 				521909B31C5A108500A78EE4 /* NMWedding.xcdatamodeld in Sources */,
 				521909DF1C5A114D00A78EE4 /* CounterUtil.swift in Sources */,
 				521909AB1C5A108500A78EE4 /* AppDelegate.swift in Sources */,
 				189A80F21C5CB15B007D287D /* MapViewController.swift in Sources */,
+				18972E8D1C5CEEE600253453 /* PhotosProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +521,7 @@
 		};
 		521909D31C5A108500A78EE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 245012DE66794D006C70C4CF /* Pods-NMWedding.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -436,11 +530,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.NMWedding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NMWedding/NMWedding-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		521909D41C5A108500A78EE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4629E808A3FA777242B197F /* Pods-NMWedding.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -449,6 +545,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.NMWedding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NMWedding/NMWedding-Bridging-Header.h";
 			};
 			name = Release;
 		};
