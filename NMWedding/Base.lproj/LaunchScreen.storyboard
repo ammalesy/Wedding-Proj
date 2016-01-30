@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,13 +16,63 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="fEn-Cu-iKA">
+                                <rect key="frame" x="100" y="100" width="400" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="49I-h6-5gR"/>
+                                    <constraint firstAttribute="width" constant="400" id="VgT-bc-nIg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wedding" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHg-ZE-rEn">
+                                <rect key="frame" x="100" y="100" width="400" height="400"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="                        Countdown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCJ-ku-2nB">
+                                <rect key="frame" x="0.0" y="328" width="600" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="HeM-ZQ-UNJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.4823529412" green="0.062745098040000002" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tHg-ZE-rEn" firstAttribute="width" secondItem="fEn-Cu-iKA" secondAttribute="width" id="Aac-wD-H9c"/>
+                            <constraint firstItem="nCJ-ku-2nB" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="DSI-zE-aRE"/>
+                            <constraint firstItem="tHg-ZE-rEn" firstAttribute="centerX" secondItem="fEn-Cu-iKA" secondAttribute="centerX" id="Dlm-rW-Arz"/>
+                            <constraint firstItem="fEn-Cu-iKA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QTt-uP-O0w"/>
+                            <constraint firstItem="tHg-ZE-rEn" firstAttribute="centerY" secondItem="fEn-Cu-iKA" secondAttribute="centerY" id="SEt-Gz-4yQ"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="nCJ-ku-2nB" secondAttribute="bottom" constant="241" id="Zxs-oE-1cb"/>
+                            <constraint firstItem="nCJ-ku-2nB" firstAttribute="centerY" secondItem="tHg-ZE-rEn" secondAttribute="centerY" constant="38" id="eX0-Zd-UzQ"/>
+                            <constraint firstItem="nCJ-ku-2nB" firstAttribute="centerX" secondItem="tHg-ZE-rEn" secondAttribute="centerX" id="p5g-t1-jCh"/>
+                            <constraint firstAttribute="trailing" secondItem="nCJ-ku-2nB" secondAttribute="trailing" id="uoe-UF-ySr"/>
+                            <constraint firstItem="tHg-ZE-rEn" firstAttribute="height" secondItem="fEn-Cu-iKA" secondAttribute="height" id="xI2-C6-ZxR"/>
+                            <constraint firstItem="fEn-Cu-iKA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="xrX-rf-xkj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Zxs-oE-1cb"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="500" height="500"/>
+    </resources>
 </document>

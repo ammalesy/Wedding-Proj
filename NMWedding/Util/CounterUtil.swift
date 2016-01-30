@@ -28,11 +28,11 @@ class CounterUtil: NSObject {
         super.init()
         self.calendar = NSLocale.currentLocale().objectForKey(NSLocaleCalendar) as! NSCalendar
         dateFormater.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        dateFormater.calendar = calendar
+        dateFormater.locale = NSLocale(localeIdentifier: "en_US_POSIX")
+        //dateFormater.calendar = calendar
     }
     func start(timeHandler: (remainTimeComponent:NSDateComponents) -> Void, completed:()->Void){
         targetDate = self.dateFormater.dateFromString(targetStringDate)
-        print(targetDate)
         
         timer = NSTimer.scheduledTimerWithTimeInterval(INCREMENT_TIMER_INTERVAL,
             target:self,
@@ -45,9 +45,13 @@ class CounterUtil: NSObject {
     
     func timeHandler(){
         let nowStr = self.dateFormater.stringFromDate(NSDate())
-        print(nowStr)
         now = self.dateFormater.dateFromString(nowStr)!
+        
+        print(nowStr)
+        print(targetStringDate)
+        
         print(now)
+        
         print(targetDate)
 
         

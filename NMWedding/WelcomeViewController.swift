@@ -10,10 +10,17 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var imgV1: UIImageView!
+    @IBOutlet weak var imgV2: UIImageView!
     @IBOutlet weak var goCountView: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         goCountView.layer.cornerRadius = 10
+        imgV1.layer.cornerRadius = imgV1.frame.size.width / 2
+        imgV2.layer.cornerRadius = imgV2.frame.size.width / 2
+        imgV1.layer.masksToBounds = true
+        imgV2.layer.masksToBounds = true
         goCountView.layer.masksToBounds = true
         // Do any additional setup after loading the view.
     }

@@ -12,6 +12,7 @@ class CountViewController: UIViewController {
     
     private let photos = PhotosProvider().photos
 
+    @IBOutlet weak var secLb: UILabel!
     @IBOutlet weak var minuteLb: UILabel!
     @IBOutlet weak var dayLb: UILabel!
     @IBOutlet weak var hourLb: UILabel!
@@ -93,15 +94,16 @@ class CountViewController: UIViewController {
     }
     func startCoutDown(){
         let counterObj:CounterUtil =  CounterUtil.sharedInstance;
-        counterObj.targetStringDate = "2559-01-30 18:56:00"
+        counterObj.targetStringDate = "2016-02-21 8:00:00"
         counterObj.start({ (component:NSDateComponents) -> Void in
             
-            self.displayClock(component.day, hour: component.hour, minute: component.minute)
+            self.displayClock(component.day, hour: component.hour, minute: component.minute, sec: component.second)
             
             }) { () -> Void in
                 
                 self.dayLb.hidden = true
                 self.minuteLb.hidden = true
+                self.secLb.hidden = true
                 self.dayCaptionLb.hidden = true
                 self.hourCaptionLb.hidden = true
                 self.minCaptionLb.hidden = true
@@ -114,13 +116,15 @@ class CountViewController: UIViewController {
                 self.hourLb.setNeedsDisplay()
         }
     }
-    func displayClock(day:Int, hour:Int, minute:Int){
+    func displayClock(day:Int, hour:Int, minute:Int, sec:Int){
         self.dayLb.text = String(day);
         self.hourLb.text = String(hour);
         self.minuteLb.text = String(minute);
+        self.secLb.text = String("\(sec)s");
         self.dayLb.setNeedsDisplay()
         self.hourLb.setNeedsDisplay()
         self.minuteLb.setNeedsDisplay()
+        self.secLb.setNeedsDisplay()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
