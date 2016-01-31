@@ -16,8 +16,8 @@ class PhotosProvider: NSObject {
     
     let photos: [NZPhoto] = {
         
-        let animationImages = [UIImage(named: "1")!,UIImage(named: "5")!,UIImage(named: "7")!,UIImage(named: "3")!]
-        let titles = ["Marry me!","You and me with the sky.","Love this moment","Feel good."]
+        let animationImages = [UIImage(named: "1")!,UIImage(named: "5")!,UIImage(named: "7")!,UIImage(named: "3")!,UIImage(named: "rr")]
+        let titles = ["Marry me!","You and me with the sky.","Love this moment","Feel good.","วันที่ผมจะยอมคุกเข่าให้ ผู้หญิงคนอื่น นอกจากคุณ\nคือ วันที่ผมผูกเชือกรองเท้าให้ ลูกสาวของเรา"]
 
         
         var mutablePhotos: [NZPhoto] = []

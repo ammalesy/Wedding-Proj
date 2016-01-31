@@ -25,7 +25,7 @@ class CountViewController: UIViewController {
     @IBOutlet weak var width_hourLb_const: NSLayoutConstraint!
     var count:Int = 0
     var countCover:Int = 0
-    let animationImages = [UIImage(named: "1")!,UIImage(named: "5")!,UIImage(named: "7")!,UIImage(named: "3")!]
+    let animationImages = [UIImage(named: "1")!,UIImage(named: "5")!,UIImage(named: "7")!,UIImage(named: "3")!,UIImage(named: "rr")!]
     @IBOutlet weak var coverImageView: UIImageView!
     
     override func viewDidLoad() {

@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="fEn-Cu-iKA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgSplash" translatesAutoresizingMaskIntoConstraints="NO" id="fEn-Cu-iKA">
                                 <rect key="frame" x="100" y="100" width="400" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="49I-h6-5gR"/>
@@ -73,6 +73,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg" width="500" height="500"/>
+        <image name="bgSplash" width="500" height="500"/>
     </resources>
 </document>
