@@ -11,6 +11,8 @@
 		18972E891C5CEDBC00253453 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18972E881C5CEDBC00253453 /* UIKit.framework */; };
 		18972E8B1C5CEDC400253453 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18972E8A1C5CEDC400253453 /* CoreGraphics.framework */; };
 		18972E8D1C5CEEE600253453 /* PhotosProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18972E8C1C5CEEE600253453 /* PhotosProvider.swift */; };
+		18972E951C5E54FF00253453 /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18972E941C5E54FF00253453 /* GiftViewController.swift */; };
+		18972E991C5E598200253453 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18972E981C5E598200253453 /* KeychainWrapper.m */; };
 		189A80F01C5CB11B007D287D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189A80EF1C5CB11B007D287D /* MapKit.framework */; };
 		189A80F21C5CB15B007D287D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A80F11C5CB15B007D287D /* MapViewController.swift */; };
 		18EE3B7C1C5CA5070050331F /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE3B7B1C5CA5070050331F /* TabbarViewController.swift */; };
@@ -50,6 +52,9 @@
 		18972E881C5CEDBC00253453 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18972E8A1C5CEDC400253453 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		18972E8C1C5CEEE600253453 /* PhotosProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosProvider.swift; sourceTree = "<group>"; };
+		18972E941C5E54FF00253453 /* GiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
+		18972E971C5E598200253453 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		18972E981C5E598200253453 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		189A80EF1C5CB11B007D287D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		189A80F11C5CB15B007D287D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		18EE3B7B1C5CA5070050331F /* TabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +117,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		18972E961C5E598200253453 /* KeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				18972E971C5E598200253453 /* KeychainWrapper.h */,
+				18972E981C5E598200253453 /* KeychainWrapper.m */,
+			);
+			name = KeychainWrapper;
+			path = ../../../Downloads/KeychainWrapper;
+			sourceTree = "<group>";
+		};
 		4F5DA50445347CCF391A0D6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,8 +168,10 @@
 				521909AA1C5A108500A78EE4 /* AppDelegate.swift */,
 				18EE3B7B1C5CA5070050331F /* TabbarViewController.swift */,
 				521909AC1C5A108500A78EE4 /* CountViewController.swift */,
+				18972E941C5E54FF00253453 /* GiftViewController.swift */,
 				189A80F11C5CB15B007D287D /* MapViewController.swift */,
 				18972E8C1C5CEEE600253453 /* PhotosProvider.swift */,
+				18972E961C5E598200253453 /* KeychainWrapper */,
 				521909AE1C5A108500A78EE4 /* Main.storyboard */,
 				521909B41C5A108500A78EE4 /* Assets.xcassets */,
 				521909B61C5A108500A78EE4 /* LaunchScreen.storyboard */,
@@ -382,7 +399,9 @@
 				521909B31C5A108500A78EE4 /* NMWedding.xcdatamodeld in Sources */,
 				521909DF1C5A114D00A78EE4 /* CounterUtil.swift in Sources */,
 				521909AB1C5A108500A78EE4 /* AppDelegate.swift in Sources */,
+				18972E991C5E598200253453 /* KeychainWrapper.m in Sources */,
 				189A80F21C5CB15B007D287D /* MapViewController.swift in Sources */,
+				18972E951C5E54FF00253453 /* GiftViewController.swift in Sources */,
 				18972E8D1C5CEEE600253453 /* PhotosProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

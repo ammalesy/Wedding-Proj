@@ -47,17 +47,17 @@ class CounterUtil: NSObject {
         let nowStr = self.dateFormater.stringFromDate(NSDate())
         now = self.dateFormater.dateFromString(nowStr)!
         
-        print(nowStr)
-        print(targetStringDate)
-        
-        print(now)
-        
-        print(targetDate)
+//        print(nowStr)
+//        print(targetStringDate)
+//        
+//        print(now)
+//        
+//        print(targetDate)
 
         
         let componentDate:NSDateComponents = calendar.components([.Year, .Month, .Day , .Hour, .Minute, .Second], fromDate: now, toDate: targetDate, options: NSCalendarOptions.WrapComponents)
         
-        print(componentDate)
+        //print(componentDate)
         //if(  ) {
         let result:NSComparisonResult = now.compare(targetDate)
   

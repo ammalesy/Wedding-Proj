@@ -5,6 +5,7 @@
 
 target 'NMWedding' do
 pod 'NYTPhotoViewer', '~> 1.0.0'
+pod 'SDWebImage', '~>3.7'
 end
 
 target 'NMWeddingTests' do
