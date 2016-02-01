@@ -10,6 +10,7 @@ import UIKit
 
 class CountViewController: UIViewController {
     
+    @IBOutlet weak var const_bottom: NSLayoutConstraint!
     private let photos = PhotosProvider().photos
 
     @IBOutlet weak var secLb: UILabel!
@@ -37,7 +38,10 @@ class CountViewController: UIViewController {
         self.animateImages()
         self.animateCoverImages()
 
-
+        let height:CGFloat = UIScreen.mainScreen().bounds.height
+        if(height <= 480){
+            self.const_bottom.constant = 7
+        }
     }
     @IBAction func openFullScreenImage(sender: AnyObject) {
         

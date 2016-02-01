@@ -9,7 +9,7 @@
         <!--Map-->
         <scene sceneID="Mo4-bF-TCD">
             <objects>
-                <viewController storyboardIdentifier="MapViewController" id="TK7-SO-Y91" customClass="MapViewController" customModule="NMWedding" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="TK7-SO-Y91" customClass="MapViewController" customModule="Nut_Mam_Wedding_Celebration" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WPB-cp-ncN"/>
                         <viewControllerLayoutGuide type="bottom" id="unm-LP-9cx"/>
@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="2139" y="-445"/>
         </scene>
-        <!--Arnut & Mamm-->
+        <!--Arnut & Dameeya-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="CountViewController" id="BYZ-38-t0r" customClass="CountViewController" customModule="NMWedding" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CountViewController" id="BYZ-38-t0r" customClass="CountViewController" customModule="Nut_Mam_Wedding_Celebration" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -222,9 +222,10 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Arnut &amp; Mamm" id="nJp-xG-xao"/>
+                    <navigationItem key="navigationItem" title="Arnut &amp; Dameeya" id="nJp-xG-xao"/>
                     <connections>
                         <outlet property="borderImageView" destination="Fua-lG-I4H" id="jjT-Ec-kVC"/>
+                        <outlet property="const_bottom" destination="vIh-bv-Iiq" id="gkM-Sb-SL4"/>
                         <outlet property="coverImageView" destination="4Ah-0C-zmb" id="xmR-H6-oDn"/>
                         <outlet property="dayCaptionLb" destination="Cfl-6C-rvh" id="JMo-7Q-5l0"/>
                         <outlet property="dayLb" destination="cpQ-Gu-qMI" id="Uxb-1C-yk9"/>
@@ -244,7 +245,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="NmG-en-ehK">
             <objects>
-                <viewController storyboardIdentifier="WelcomeViewController" id="QgQ-0O-BkG" customClass="WelcomeViewController" customModule="NMWedding" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" id="QgQ-0O-BkG" customClass="WelcomeViewController" customModule="Nut_Mam_Wedding_Celebration" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OR2-fa-yNA"/>
                         <viewControllerLayoutGuide type="bottom" id="hiQ-Fk-RzR"/>
@@ -284,7 +285,7 @@
                                             <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <size key="shadowOffset" width="1" height="1"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mamm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drO-gb-tEl">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dameeya" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drO-gb-tEl">
                                             <rect key="frame" x="182" y="142" width="236" height="33"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="33" id="BeO-ja-uWj"/>
@@ -374,7 +375,7 @@
                                     <action selector="goCountViewAction:" destination="QgQ-0O-BkG" eventType="touchUpInside" id="2qE-nB-FM8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arnut K." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfd-uD-TXH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arnut" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfd-uD-TXH">
                                 <rect key="frame" x="182" y="70" width="236" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="236" id="4PT-BD-vYB"/>
@@ -417,7 +418,7 @@
         <!--Tabbar View Controller-->
         <scene sceneID="l43-k6-Gp0">
             <objects>
-                <tabBarController storyboardIdentifier="tabbarMenu" automaticallyAdjustsScrollViewInsets="NO" id="FaP-CA-AOh" customClass="TabbarViewController" customModule="NMWedding" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabbarMenu" automaticallyAdjustsScrollViewInsets="NO" id="FaP-CA-AOh" customClass="TabbarViewController" customModule="Nut_Mam_Wedding_Celebration" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="5vZ-KL-y20">
                         <autoresizingMask key="autoresizingMask"/>
@@ -519,7 +520,7 @@
         <!--Gift-->
         <scene sceneID="iNm-FM-Pbn">
             <objects>
-                <viewController storyboardIdentifier="GiftViewController" id="NcJ-C4-PH3" customClass="GiftViewController" customModule="NMWedding" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GiftViewController" id="NcJ-C4-PH3" customClass="GiftViewController" customModule="Nut_Mam_Wedding_Celebration" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bfl-jG-2bC"/>
                         <viewControllerLayoutGuide type="bottom" id="8AJ-EZ-DxK"/>
@@ -572,7 +573,7 @@
                                                 <action selector="clickGiftBoxAction:" destination="NcJ-C4-PH3" eventType="touchUpInside" id="FW5-m0-BqC"/>
                                             </connections>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Cg-Jk-Hcw">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Cg-Jk-Hcw">
                                             <rect key="frame" x="554" y="385" width="22" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="22" id="BWm-Mo-sWo"/>
@@ -659,6 +660,7 @@
                     <navigationItem key="navigationItem" title="Gift" id="Vws-lm-Alr"/>
                     <connections>
                         <outlet property="button" destination="MEi-Rn-nc4" id="ABB-Nf-lj6"/>
+                        <outlet property="const_bottom" destination="LMj-Il-mDc" id="wdd-DV-uMt"/>
                         <outlet property="imageView" destination="zRz-oZ-wWg" id="Lwx-ed-y90"/>
                         <outlet property="subTitleLb" destination="qAn-pe-Km9" id="fM6-5M-S9g"/>
                         <outlet property="titleLb" destination="wAc-S4-fAQ" id="QeQ-Of-VNg"/>

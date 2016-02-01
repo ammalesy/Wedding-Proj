@@ -11,7 +11,7 @@ import MapKit
 
 class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
 
-    let coord = CLLocationCoordinate2DMake(40.730872, -74.003066)
+    let coord = CLLocationCoordinate2DMake(13.854985, 100.840753)
     let dropPin = MKPointAnnotation()
     @IBOutlet weak var mapView: MKMapView!
     var locationManager: CLLocationManager!
@@ -31,8 +31,8 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
         // Drop a pin
         
         dropPin.coordinate = coord
-        dropPin.title = "Wedding Event"
-        dropPin.subtitle = "55/555"
+        dropPin.title = "Arnut & Dameeya Wedding"
+        dropPin.subtitle = "40/1 ถ.เลียบวารี หนองจอก กรุงเทพฯ 10530"
         mapView.addAnnotation(dropPin)
         
         

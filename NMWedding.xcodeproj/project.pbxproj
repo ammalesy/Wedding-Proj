@@ -57,7 +57,7 @@
 		189A80F11C5CB15B007D287D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		18EE3B7B1C5CA5070050331F /* TabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		245012DE66794D006C70C4CF /* Pods-NMWedding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMWedding.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NMWedding/Pods-NMWedding.debug.xcconfig"; sourceTree = "<group>"; };
-		521909A71C5A108500A78EE4 /* NMWedding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMWedding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		521909A71C5A108500A78EE4 /* Nut&Mam Wedding Celebration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nut&Mam Wedding Celebration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		521909AA1C5A108500A78EE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		521909AC1C5A108500A78EE4 /* CountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountViewController.swift; sourceTree = "<group>"; };
 		521909AF1C5A108500A78EE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		521909A81C5A108500A78EE4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				521909A71C5A108500A78EE4 /* NMWedding.app */,
+				521909A71C5A108500A78EE4 /* Nut&Mam Wedding Celebration.app */,
 				521909BE1C5A108500A78EE4 /* NMWeddingTests.xctest */,
 				521909C91C5A108500A78EE4 /* NMWeddingUITests.xctest */,
 			);
@@ -228,7 +228,7 @@
 			);
 			name = NMWedding;
 			productName = NMWedding;
-			productReference = 521909A71C5A108500A78EE4 /* NMWedding.app */;
+			productReference = 521909A71C5A108500A78EE4 /* Nut&Mam Wedding Celebration.app */;
 			productType = "com.apple.product-type.application";
 		};
 		521909BD1C5A108500A78EE4 /* NMWeddingTests */ = {
@@ -543,11 +543,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NMWedding/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.NMWedding;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Nut&Mam Wedding Celebration";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "NMWedding/NMWedding-Bridging-Header.h";
 			};
 			name = Debug;
@@ -558,11 +560,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NMWedding/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.NMWedding;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Nut&Mam Wedding Celebration";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "NMWedding/NMWedding-Bridging-Header.h";
 			};
 			name = Release;

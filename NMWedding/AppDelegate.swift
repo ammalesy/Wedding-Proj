@@ -13,20 +13,62 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let calendar:NSCalendar = NSCalendar.autoupdatingCurrentCalendar()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+
+        UIApplication.sharedApplication().applicationIconBadgeNumber = 0
+        let types:UIUserNotificationType = [UIUserNotificationType.Badge,UIUserNotificationType.Sound,UIUserNotificationType.Alert]
+        let settings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: types, categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
         
+        let notis = NSUserDefaults.standardUserDefaults().objectForKey("noti")
         
-//        let colorBgLine = UIColor(red: 77/255.0, green: 76/255.0, blue: 74/255.0, alpha: 1)
-        let img = UIImage()//self.getImageWithColor(colorBgLine, size: CGSizeMake(1, 1))
+        if((notis) == nil){
+            
+            self.localnotification(2, detail: "Nut&Mam wedding remain 2 day")
+            self.localnotification(1, detail: "Nut&Mam wedding remain 1 day")
+            self.localnotification(0, detail: "Nut&Mam Wedding time!")
+            
+            NSUserDefaults.standardUserDefaults().setObject("REGISTED", forKey: "noti")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+
+        let img = UIImage()
         
         UITabBar.appearance().shadowImage = img
-       // [[UINavigationBar appearance] setFrame:CGRectMake(0, 0, 320, 60)];
-        //UINavigationBar.appearance().frame = CGRectMake(0, 0, 320, 100)
-        
-        // Override point for customization after application launch.
+
         return true
+    }
+    func localnotification(beforeDay:Int, detail:String){
+
+        let dateComp:NSDateComponents = NSDateComponents()
+        dateComp.day = 21 - beforeDay
+        dateComp.month = 2
+        if(self.calendar.calendarIdentifier == "buddhist"){
+            dateComp.year = 2559
+        }else{
+            dateComp.year = 2016
+        }
+        dateComp.hour = 8
+        dateComp.minute = 0
+        let itemDate = calendar.dateFromComponents(dateComp)
+        let localNotif:UILocalNotification = UILocalNotification()
+        localNotif.fireDate = itemDate
+        localNotif.timeZone = NSTimeZone.defaultTimeZone();
+        localNotif.alertAction = "Action"
+        if #available(iOS 8.2, *) {
+            localNotif.alertTitle = "Detail"
+        } else {
+            // Fallback on earlier versions
+        }
+        localNotif.alertBody = detail
+        localNotif.soundName = UILocalNotificationDefaultSoundName;
+        localNotif.applicationIconBadgeNumber = localNotif.applicationIconBadgeNumber + 1;
+        
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotif)
     }
     func getImageWithColor(color: UIColor, size: CGSize) -> UIImage {
         let rect = CGRectMake(0, 0, size.width, size.height)

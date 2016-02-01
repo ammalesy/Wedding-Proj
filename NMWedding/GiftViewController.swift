@@ -11,17 +11,21 @@ import UIKit
 
 class GiftViewController: UIViewController,UIAlertViewDelegate {
 
+    let passwordReset = "unlock"
     let MyKeychainWrapper = KeychainWrapper()
     let userDefault = NSUserDefaults.standardUserDefaults()
     var gift_box_clicked:Bool = false
     var pathImage:String = ""
     var blocking:Bool = false
     
+    @IBOutlet weak var const_bottom: NSLayoutConstraint!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLb: UILabel!
     @IBOutlet weak var subTitleLb: UILabel!
     @IBOutlet weak var button: UIButton!
     var viewOverlay:UIView!
+    
+    var session:NSURLSession!
     
     
     let animationImages = [UIImage(named: "gift_promo")!,UIImage(named: "gift_promo_left")!,UIImage(named: "gift_promo")!,UIImage(named: "gift_promo_right")!]
@@ -41,7 +45,8 @@ class GiftViewController: UIViewController,UIAlertViewDelegate {
                 
                 let url : String = String(format: "http://www.reallifefootball.com/wedding_api/")
                 let url1: NSURL = NSURL(string: url)!
-                let session = NSURLSession.sharedSession()
+
+                
                 let task = session.dataTaskWithURL(url1, completionHandler: {
                     (data, response, error) -> Void in
                     do {
@@ -94,6 +99,15 @@ class GiftViewController: UIViewController,UIAlertViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let height:CGFloat = UIScreen.mainScreen().bounds.height
+        if(height <= 480){
+            self.const_bottom.constant = 13
+        }
+        
+        let configuration:NSURLSessionConfiguration = NSURLSessionConfiguration.defaultSessionConfiguration();
+        configuration.requestCachePolicy = NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData
+        self.session = NSURLSession(configuration: configuration)
+        
         
         let val = MyKeychainWrapper.myObjectForKey(kSecValueData)
         if(String(val) == "password")
@@ -128,7 +142,7 @@ class GiftViewController: UIViewController,UIAlertViewDelegate {
     func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
         
         let password:UITextField = alertView.textFieldAtIndex(0)!
-        if(password.text == "WEDDINGEVENT")
+        if(password.text == self.passwordReset)
         {
             let alert:UIAlertView = UIAlertView(title: "Reset success", message: "Please kill application and open again.", delegate: nil, cancelButtonTitle: "OK")
             alert.show()
@@ -169,7 +183,7 @@ class GiftViewController: UIViewController,UIAlertViewDelegate {
                 let val = MyKeychainWrapper.myObjectForKey(kSecValueData)
                 let url : String = String(format: "http://www.reallifefootball.com/wedding_api/sync.php?id=\(val)")
                 let url1: NSURL = NSURL(string: url)!
-                let session = NSURLSession.sharedSession()
+
                 let task = session.dataTaskWithURL(url1, completionHandler: {
                     (data, response, error) -> Void in
                     do {
