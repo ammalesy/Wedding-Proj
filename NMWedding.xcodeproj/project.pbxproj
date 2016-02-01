@@ -12,7 +12,6 @@
 		18972E8B1C5CEDC400253453 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18972E8A1C5CEDC400253453 /* CoreGraphics.framework */; };
 		18972E8D1C5CEEE600253453 /* PhotosProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18972E8C1C5CEEE600253453 /* PhotosProvider.swift */; };
 		18972E951C5E54FF00253453 /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18972E941C5E54FF00253453 /* GiftViewController.swift */; };
-		18972E991C5E598200253453 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18972E981C5E598200253453 /* KeychainWrapper.m */; };
 		189A80F01C5CB11B007D287D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189A80EF1C5CB11B007D287D /* MapKit.framework */; };
 		189A80F21C5CB15B007D287D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A80F11C5CB15B007D287D /* MapViewController.swift */; };
 		18EE3B7C1C5CA5070050331F /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE3B7B1C5CA5070050331F /* TabbarViewController.swift */; };
@@ -25,6 +24,7 @@
 		521909C31C5A108500A78EE4 /* NMWeddingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521909C21C5A108500A78EE4 /* NMWeddingTests.swift */; };
 		521909CE1C5A108500A78EE4 /* NMWeddingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521909CD1C5A108500A78EE4 /* NMWeddingUITests.swift */; };
 		521909DF1C5A114D00A78EE4 /* CounterUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521909DE1C5A114D00A78EE4 /* CounterUtil.swift */; };
+		521992051C5F01FC00B8B3FA /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 521992041C5F01FC00B8B3FA /* KeychainWrapper.m */; };
 		525039671C5B6A3D0094CFB0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525039661C5B6A3D0094CFB0 /* WelcomeViewController.swift */; };
 		DC88471E1A70B9CF8A7A4203 /* libPods-NMWedding.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E92ECE32F5DFEB3BC86649 /* libPods-NMWedding.a */; };
 /* End PBXBuildFile section */
@@ -53,8 +53,6 @@
 		18972E8A1C5CEDC400253453 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		18972E8C1C5CEEE600253453 /* PhotosProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosProvider.swift; sourceTree = "<group>"; };
 		18972E941C5E54FF00253453 /* GiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
-		18972E971C5E598200253453 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
-		18972E981C5E598200253453 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		189A80EF1C5CB11B007D287D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		189A80F11C5CB15B007D287D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		18EE3B7B1C5CA5070050331F /* TabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +72,8 @@
 		521909CD1C5A108500A78EE4 /* NMWeddingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMWeddingUITests.swift; sourceTree = "<group>"; };
 		521909CF1C5A108500A78EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		521909DE1C5A114D00A78EE4 /* CounterUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterUtil.swift; sourceTree = "<group>"; };
+		521992031C5F01FC00B8B3FA /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		521992041C5F01FC00B8B3FA /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		525039661C5B6A3D0094CFB0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B4629E808A3FA777242B197F /* Pods-NMWedding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMWedding.release.xcconfig"; path = "Pods/Target Support Files/Pods-NMWedding/Pods-NMWedding.release.xcconfig"; sourceTree = "<group>"; };
 		D8E92ECE32F5DFEB3BC86649 /* libPods-NMWedding.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NMWedding.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,16 +115,6 @@
 				B4629E808A3FA777242B197F /* Pods-NMWedding.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		18972E961C5E598200253453 /* KeychainWrapper */ = {
-			isa = PBXGroup;
-			children = (
-				18972E971C5E598200253453 /* KeychainWrapper.h */,
-				18972E981C5E598200253453 /* KeychainWrapper.m */,
-			);
-			name = KeychainWrapper;
-			path = ../../../Downloads/KeychainWrapper;
 			sourceTree = "<group>";
 		};
 		4F5DA50445347CCF391A0D6F /* Frameworks */ = {
@@ -171,7 +161,6 @@
 				18972E941C5E54FF00253453 /* GiftViewController.swift */,
 				189A80F11C5CB15B007D287D /* MapViewController.swift */,
 				18972E8C1C5CEEE600253453 /* PhotosProvider.swift */,
-				18972E961C5E598200253453 /* KeychainWrapper */,
 				521909AE1C5A108500A78EE4 /* Main.storyboard */,
 				521909B41C5A108500A78EE4 /* Assets.xcassets */,
 				521909B61C5A108500A78EE4 /* LaunchScreen.storyboard */,
@@ -179,6 +168,7 @@
 				521909B11C5A108500A78EE4 /* NMWedding.xcdatamodeld */,
 				18972E831C5CE86100253453 /* NMWedding-Bridging-Header.h */,
 				18972E861C5CED7500253453 /* NZPhoto.swift */,
+				521992021C5F01FC00B8B3FA /* KeychainWrapper */,
 			);
 			path = NMWedding;
 			sourceTree = "<group>";
@@ -207,6 +197,15 @@
 				521909DE1C5A114D00A78EE4 /* CounterUtil.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		521992021C5F01FC00B8B3FA /* KeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				521992031C5F01FC00B8B3FA /* KeychainWrapper.h */,
+				521992041C5F01FC00B8B3FA /* KeychainWrapper.m */,
+			);
+			path = KeychainWrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,7 +398,7 @@
 				521909B31C5A108500A78EE4 /* NMWedding.xcdatamodeld in Sources */,
 				521909DF1C5A114D00A78EE4 /* CounterUtil.swift in Sources */,
 				521909AB1C5A108500A78EE4 /* AppDelegate.swift in Sources */,
-				18972E991C5E598200253453 /* KeychainWrapper.m in Sources */,
+				521992051C5F01FC00B8B3FA /* KeychainWrapper.m in Sources */,
 				189A80F21C5CB15B007D287D /* MapViewController.swift in Sources */,
 				18972E951C5E54FF00253453 /* GiftViewController.swift in Sources */,
 				18972E8D1C5CEEE600253453 /* PhotosProvider.swift in Sources */,

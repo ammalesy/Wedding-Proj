@@ -39,7 +39,7 @@ class GiftViewController: UIViewController,UIAlertViewDelegate {
                 
                 self.blocking = true
                 
-                let url : String = String(format: "http://192.168.1.6/wedding_api/")
+                let url : String = String(format: "http://www.reallifefootball.com/wedding_api/")
                 let url1: NSURL = NSURL(string: url)!
                 let session = NSURLSession.sharedSession()
                 let task = session.dataTaskWithURL(url1, completionHandler: {
@@ -167,7 +167,7 @@ class GiftViewController: UIViewController,UIAlertViewDelegate {
             if(validate == nil){
                 self.blocking = true
                 let val = MyKeychainWrapper.myObjectForKey(kSecValueData)
-                let url : String = String(format: "http://192.168.1.6/wedding_api/sync.php?id=\(val)")
+                let url : String = String(format: "http://www.reallifefootball.com/wedding_api/sync.php?id=\(val)")
                 let url1: NSURL = NSURL(string: url)!
                 let session = NSURLSession.sharedSession()
                 let task = session.dataTaskWithURL(url1, completionHandler: {
